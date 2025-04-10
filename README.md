@@ -1,5 +1,5 @@
 # Welcome to your Expo app 👋
-## This thing is so messy but it was my first website i think so bear with me hahaha
+## Game of thrones themed daily to do list maker (my first web site kinda thing)
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
