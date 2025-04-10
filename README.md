@@ -48,3 +48,4 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+  Idk idk just done smth based on my intrusive thoughts or deepest thoughts i like game of thrones so i made this thing to match someone 
