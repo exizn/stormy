@@ -1,3 +1,4 @@
 # stormy
-Piece of projects that made me understand the coding more i guess
-![This section is all about me](https://media.giphy.com/media/xyz12345/giphy.gif)
+This section is all about me so gettt out
+![This is all about me](https://tenor.com/view/mizuto-irido-gif-27590751)
+
