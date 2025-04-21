@@ -1,33 +1,52 @@
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { Tabs } from "expo-router";
-import MaterialTopTabNavigationOptions from "react-native-pager-view";
-export default function TabLayout() {
+import { Stack, Redirect } from "expo-router";
+
+export default function RootLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: "blue",
-        tabBarStyle: { width: 390, height: 56 },
-      }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Нүүр хуудас",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="home" color={color} />
-          ),
+    <>
+      <Redirect href="/login" />
+      
+      <Stack 
+        screenOptions={{
+          headerShown: false,
         }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile",
-          tabBarIcon: ({ color }) => (
-            <MaterialIcons name="account-circle" size={24} color="black" />
-          ),
-        }}
-      />
-    </Tabs>
+      >
+        <Stack.Screen 
+          name="login"
+          options={{ 
+            headerShown: false,
+            gestureEnabled: false,
+          }} 
+        />
+        <Stack.Screen 
+          name="/"
+          options={{
+            headerShown: true,
+            headerTitle: "Instagram",
+            gestureEnabled: false,
+          }}
+        />
+        <Stack.Screen 
+          name="search" 
+          options={{
+            headerShown: true,
+            headerTitle: "Search",
+          }}
+        />
+        <Stack.Screen 
+          name="profile" 
+          options={{
+            headerShown: true,
+            headerTitle: "Profile",
+          }}
+        />
+        <Stack.Screen 
+          name="postdesc" 
+          options={{
+            headerShown: true,
+            headerTitle: "Post",
+          }}
+        />
+      </Stack>
+    </>
   );
 }
